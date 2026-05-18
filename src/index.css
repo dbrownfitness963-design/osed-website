@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-white text-gray-900 antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold;
+  }
+
+  /* Premium minimalist spacing */
+  h1 {
+    @apply text-4xl md:text-5xl font-bold;
+    letter-spacing: -0.02em;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl font-bold;
+    letter-spacing: -0.01em;
+  }
+
+  h3 {
+    @apply text-xl md:text-2xl font-bold;
+  }
+
+  p {
+    @apply leading-relaxed;
+  }
+}
+
+@layer components {
+  /* Button Components - Sharp, Minimal */
+  .btn-primary {
+    @apply px-6 py-3 bg-black text-white font-semibold hover:bg-gray-800 transition-colors duration-200;
+    border-radius: 4px;
+  }
+  
+  .btn-primary-red {
+    @apply px-6 py-3 bg-red-600 text-white font-semibold hover:bg-red-700 transition-colors duration-200;
+    border-radius: 4px;
+  }
+  
+  .btn-secondary {
+    @apply px-6 py-3 bg-gray-200 text-black font-semibold hover:bg-gray-300 transition-colors duration-200;
+    border-radius: 4px;
+  }
+
+  /* Card components - Sharp edges, minimal design */
+  .card-minimal {
+    @apply border border-gray-200 p-8;
+    border-radius: 4px;
+  }
+
+  .card-hover {
+    @apply border border-gray-200 p-8 transition-all duration-200 hover:border-red-600 hover:shadow-lg;
+    border-radius: 4px;
+  }
+  
+  /* Container and spacing */
+  .container-custom {
+    @apply max-w-6xl mx-auto px-4;
+  }
+  
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+
+  /* Icon containers - Minimal circular design */
+  .icon-circle {
+    @apply w-12 h-12 md:w-16 md:h-16 rounded-full flex items-center justify-center;
+    border-radius: 50%;
+  }
+
+  /* Text utilities for minimalism */
+  .text-uppercase-small {
+    @apply text-xs uppercase tracking-widest font-semibold text-gray-600;
+  }
+}
