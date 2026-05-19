@@ -12,9 +12,7 @@ export default function Layout({ children }) {
         <div className="container-custom">
           <div className="flex items-center justify-between py-4">
             <Link to="/" className="flex items-center gap-3 hover:opacity-80 transition">
-              <div className="w-20 h-20 rounded-xl bg-slate-100 p-2 shadow-sm">
-                <img src="/osed-logo.png" alt="OSED logo" className="w-full h-full object-contain" />
-              </div>
+              <img src="/osed-logo.png" alt="OSED logo" className="h-16 object-contain" />
               <div className="hidden sm:block">
                 <div className="text-lg font-bold text-black">OSED</div>
                 <div className="text-xs text-gray-600 leading-tight">ONE STEP EVERYDAY.</div>
